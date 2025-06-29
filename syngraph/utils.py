@@ -15,9 +15,11 @@ def build_graph_from_file(input_file: str) -> nx.Graph:
 
     with open(input_file) as f:
         for line in f:
-            genes = line.strip().split()
-            if len(genes) < 2:
+            tokens = line.strip().split()
+            if len(tokens) < 3:
                 continue
+
+            genes = tokens[1:]
 
             for i, gene1 in enumerate(genes):
                 for gene2 in genes[i + 1:]:
