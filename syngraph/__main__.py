@@ -23,6 +23,7 @@ def parse_args():
 
 functions = {
     "mso": functions.mso,
+    "mso_p": functions.mso_p,
 }
 
 if __name__ == "__main__":
