@@ -83,7 +83,7 @@ def output_connected_components(components: list, output_file: str):
     """
     with open(output_file, "w") as out:
         for idx, group in enumerate(components, 1):
-            out.write(f"MS{idx}\t" + "\t".join(sorted(group)) + "\n")
+            out.write(f"MS:{idx}\t" + "\t".join(sorted(group)) + "\n")
 
 
 def extract_sp_name(gene: str) -> str:
