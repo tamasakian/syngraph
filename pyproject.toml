@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "syngraph"
-version = "0.2.0"
+version = "0.2.1"
 description = "Syntenic ortholog clustering via graph connected components"
 authors = [
     {name = "tamasakian", email = "tamasakian@gmail.com"}
